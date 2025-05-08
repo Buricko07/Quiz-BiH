@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz BIH - Pitanja</title>
+    <link rel="stylesheet" href="/question-page/questions.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <div>
+                <div class="logo">Quiz <span style="color: #2559D2;">BiH</span></div>
+            </div>
+            <div class="points">Bodovi: <span id="score">0</span></div>
+        </div>
+        
+        <div class="question-text question"></div>
+        
+        <div class="divider"></div>
+        
+        <div class="options answers"></div>
+        
+        <div class="timer">Preostalo vrijeme: <span id="time-left">30</span>s</div>
+    </div>
+
+    <div class="popup" style="text-align: left; display: none;">
+        <div class="quiz-title">Quiz <span style="color: #2559D2;">BiH</span></div>
+        <div class="congrats">KVIZ ZAVRŠEN!!</div>
+        <div class="stats">
+            <div class="stat-item">Osvojili ste: <strong>120 bodova 🏆</strong></div>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-close">Zatvori</button>
+            <button class="btn btn-leaderboard">Leaderboard</button>
+        </div>
+    </div>
+
+    <script src="/question-page/question.js"></script>
+</body>
+</html>
