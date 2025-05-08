@@ -1,3 +1,3 @@
 window.onload = function() {
-    window.location.href = "./home/index.html"
+    window.location.href = "/home-page/home.html";
 }
